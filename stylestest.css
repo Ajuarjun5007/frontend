@@ -1,0 +1,15 @@
+body{
+    background-color: blueviolet;
+}
+#front div{
+   display: flex;
+    justify-content: center;
+
+}
+#front{
+    height: 300px;
+    width: 400px;
+    background-color: aqua;
+    justify-content: center;
+    margin-bottom: 30px;
+}

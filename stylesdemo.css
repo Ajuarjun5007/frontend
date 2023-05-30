@@ -1,0 +1,14 @@
+#front{
+    /* margin-left: 45%; */
+    /* margin-top: 30%; */
+    background-color: red;
+    width: 100px;
+    height: 400px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
