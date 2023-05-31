@@ -1,0 +1,12 @@
+.wc{
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+}
+#container{
+    margin: auto;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
