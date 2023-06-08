@@ -1,0 +1,17 @@
+
+body{
+    background-image: linear-gradient(to right 
+    ;
+}
+#vid {
+
+    visibility: visible;
+    position: relative;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%,-50%);
+
+}
+#container{
+    position: absolute;
+}

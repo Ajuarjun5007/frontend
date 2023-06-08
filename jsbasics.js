@@ -135,7 +135,7 @@
 //     let Total=95;
 //     console.log(`"You have ${itemCount}.
 //  Your bill amount is $${Total}"`);
- //--------------
+ // --------------XXXXXXXX-------------
 //   Arrow function
 //   let arr=[1,2,3,4,5]
 //   let sum=(arr)=>{
@@ -151,9 +151,92 @@
 
 //arguments
 // let addition=function (...args){
-    // let sum=0;
-    // for(let val of args)
-    // sum+=val
-    // return sum
+//     let sum=0;
+//     for(let val of args)
+//     sum+=val
+//     return sum
 // }
 // console.log(addition(1,2,3,45,3))
+// // --------------call back-------------
+// let name="arjun"
+// function greeting(name){
+//     console.log("Hi am ", name)
+// }
+// // greeting(name)
+// function greetHeading (name){
+//     let heading = document.querySelector('.main')
+//     heading.innerHTML="my name is "+ name;
+// }
+// function greetOthers(callback) {
+//     callback(name)
+// }
+// greetOthers(greeting)
+// greetOthers(greetHeading)
+// ---------forEach------
+//  arr=['arjun','ram','ani']
+//  arr.forEach(myFunction);
+// function myFunction(name) {
+//     console.log('Hi i am ',(name.toUpperCase()))
+// }
+
+// const arr=['ECE','MECH','EEE','CSE']
+// arr.forEach(val => {
+//     const opt = document.createElement('option')
+//     opt.textContent=val;
+//     opt.value=val;
+//    const options= document.querySelector(".dropdown")
+//  options.appendChild(opt)
+// })
+//---------map,filter,reduce--------
+// ---map---
+// let arr =[12,231,211,200,34]
+// let oddnum =arr.map(item => Math.round(item/2))
+// console.log(oddnum)
+// //----filter---
+// let num = arr.filter(item => item%2==0)
+// console.log(num)
+// //reduce
+// let sum = arr.reduce((total,el) => total+el,-100 )
+// console.log(sum)
+// let darr = [
+//                 ['a','b','c'],
+//                 ['d','a','d'],
+//                 ['g','h','i']
+// ]
+// let result = darr.flat().reduce((total,el) =>{
+//             if(total[el]){
+//                 total[el]++;
+//             }else{
+//                 total[el]=1
+//             }
+//             return total
+// },{})
+// console.log(result)
+//----------return functions and closures-----------
+// // let x=10;
+// function outer(x){
+//    return  function (y){
+//         return (x+y)
+//     }
+// //    return  inner()
+// }
+//   let res = outer(8)
+//   console.log(res(10))
+// ---------set and map-----
+//set
+// let arr =[1,2,3,4,4,4,7,8];
+// let set1 =new Set(arr)
+// for(let i=0; i<arr.length; i++){
+//     set1.add(arr[i])
+// }
+// set1.forEach((k,v,set1)=>{
+//     console.log(k)
+// }
+// )
+// map
+// let map = new Map()
+// map.set('a',1)
+// map.set('b',2)
+// map.set('c',3)
+// map.set('d',4)
+// console.log(map)

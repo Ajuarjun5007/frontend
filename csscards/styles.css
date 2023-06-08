@@ -1,0 +1,67 @@
+
+html{
+    background: radial-gradient(rgba(8, 8, 8, 0.968),rgba(247, 246, 245, 0.4));
+}
+nav > ul{
+    background-color: rgb(52, 52, 157);
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(0, 0, 0);
+    /* list-style: none; */
+    align-items: center;
+    /* text-decoration:none; */
+    /* text-align: end; */
+    padding: 15px;
+}
+ul{
+    /* float: right; */
+    gap: 15px;
+    display: flex;
+}
+li{
+    display: inline;
+}
+
+li a:hover{
+    color: rgb(221, 18, 18);
+    cursor: pointer;
+}
+#searchbar{
+   /* min-height: fit-content; */
+   background-color: rgb(208, 13, 13);
+   margin: 40px;
+}
+h2{
+    display: flex;
+    padding-top: 2px;
+}
+#search-barcontent{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    /* padding-top: px; */
+    padding:150px 90px;
+   
+    background-image: url("https://wallpaperaccess.com/full/4659502.jpg"); 
+     background-position:bottom;
+   /* background-repeat: no-repeat; */
+   background-size: cover;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color:rgb(10, 10, 9);
+   font-weight: bolder;
+}
+
+
+input{
+    margin-bottom: 6px;
+    padding: 10px;
+    border: solid 5px rgb(4, 4, 4);
+    border-radius: 30px;
+    font-size:large;
+    box-shadow: 0px 0px 10px 10px red;
+    
+}
+
+

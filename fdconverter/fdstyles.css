@@ -14,7 +14,7 @@ body{
     padding: 1px;
 }
 input {
-    width: 200-20px;
+    width: 200px;
 }
 input:active{
     width: 200px;
