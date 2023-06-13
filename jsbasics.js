@@ -24,7 +24,7 @@
 // console.log(1=="1")
 // // checks value.i.e.converts num 5 and checks
 // console.log(1==="1")
-// checks type whether its sme data type or not
+// checks type whether its same data type or not
 // console.log('wzxs'>'Abcd')
 // for loop...
 // let arr1=[1,2,3,4,5]

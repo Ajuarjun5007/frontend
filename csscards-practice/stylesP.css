@@ -1,0 +1,155 @@
+html,body{
+    margin:0;
+    background: crimson;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(168,2,148,1) 35%, rgba(0,212,255,1) 100%);
+font-family: 'Roboto', sans-serif; */
+
+}
+
+
+/* navbar styles */
+.navbar ul{
+    padding:0px  25px;
+    height: 50px;
+    background-color: black ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 50px;
+    font-size: larger;
+}
+/* removes style of list */
+.navbar ul li{
+    display: inline;
+    align-items: flex-end;
+    font-weight:bolder;
+}
+/* reomves underline */
+a{
+    display: block;
+    text-decoration: none;
+    color: goldenrod;
+    font-size: larger;
+    padding:12px 0px; 
+}
+.navbar ul li :hover{
+    background: white;
+    /* color: blueviolet; */
+}
+/* styling head */
+
+.main{
+    background-image: url(https://www.pixel4k.com/wp-content/uploads/2018/11/marvel-and-dc-low-poly-art_1541294334.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px 10px;
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    justify-content: space-around;
+    align-items: center;
+}
+.title{
+    color: white;
+   font-size:xx-large;
+   /* border-radius: 50%; */
+}
+.main-content{
+    padding: 10px;
+    background-color: black;
+    box-shadow: 10px 10px 10px 10px red;
+    border-radius: 5px;
+}
+.main-content:hover{
+    box-shadow: 10px 10px 10px 10px green;
+}
+
+/* cards control */
+ .cards{
+ display:flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ font-weight:bolder;
+} 
+.cards img{
+    width:340px;
+    
+}
+/* card style */
+.card{
+    margin: 5px;
+    padding: 10px;
+    background-color: black;
+    font-size:x-large;
+    font-weight:bolder;
+    border-radius: 20px;
+    text-align: center;
+    color: red;
+}
+.card :hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px goldenrod;
+}
+/* rating style */
+.fa-star,.fa-solid{
+    color: goldenrod;
+}
+/* footer-image style */
+.footerimg{
+    width: 900px;
+     height: 500px;
+     /* padding:70px 50px */
+}
+/*advertise control  */
+.advertise{
+    background-color: black;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-weight:bolder;
+    align-items: flex-start;
+    font-size: 50px;
+    justify-content:space-evenly;
+    column-gap: 4px;
+    margin: 50px;
+    text-align:center;
+    border-radius: 30px;
+    color: goldenrod;
+}
+/* advertise on hover */
+.advertise:hover{
+    box-shadow: 0px 0px 10px 5px goldenrod;
+    transform: translate(20px,20px);
+}
+/* footer */
+.footer{
+    height: 100px;
+    background-color: black;
+    color: goldenrod;
+    display: flex;
+    justify-content: flex-end;
+    font-size: larger;
+    padding-right: 100px;
+    gap: 40px;
+}
+
+.foot-unorder{
+  display: flex;
+  gap: 40px;
+  padding: -50px  10px;
+}
+.footer ul li{
+    list-style: none;
+    display: inline;
+    padding-right: 100px;
+    font-weight:bolder; 
+    font-size: x-large;
+    align-items: center;
+    padding: 12px 0px 12px 0px;
+}
+.footer  li:hover{
+    background-color: white;
+}
