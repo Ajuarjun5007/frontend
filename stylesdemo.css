@@ -1,14 +1,8 @@
-#front{
-    /* margin-left: 45%; */
-    /* margin-top: 30%; */
-    background-color: red;
-    width: 100px;
-    height: 400px;
-    margin: auto;
-    padding-top: 10px;
-}
+.text-img{
+background-color: blanchedalmond;
+display: flex;
 
-body{
-    padding: 0;
-    margin: 0;
+}
+.text-img img{
+    height: 300px;
 }
