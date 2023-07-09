@@ -1,0 +1,55 @@
+html,body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.heading{
+    display:flex;
+    justify-content: space-around;
+}
+.heading select{
+    width: 300px;
+    height: 50px;
+    justify-content:center;
+    align-items: center;
+}
+
+.movie-container{
+    display: block;
+    height:700px;
+    width:70%;
+    border: 2px solid black;
+    margin: auto;
+    padding: 30px;
+    overflow: scroll;
+}
+ .movie-container::-webkit-scrollbar{
+    display: none;
+ }
+.movies{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    margin: auto;
+    height: 300px;
+    width: 90%;
+    /* border: 3px solid black; */
+    justify-content: space-between;
+}
+.movieimg{
+    height: 300px;
+    width: 30%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movieimg img{
+    height: 250px;
+    width: 80%;
+   
+    
+}
+.movie-details{
+    width:70%;
+    /* border:1px solid yellow; */
+    font-size: larger;
+}
