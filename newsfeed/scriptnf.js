@@ -1,3 +1,5 @@
+let savednews={}
+let savedarray=[]
 const allCategoryUrl =
   "https://content.newtonschool.co/v1/pr/64806cf8b7d605c99eecde47/news";
 
@@ -27,7 +29,7 @@ function createCards(dataArray) {
         <p>category ${item[" category"]}</p>
         </div>
         <div class="news-content">
-                ${item.content}
+                <p>${item.content}</p>
                 <a href="${item.url}">Read More</a></div>
                 <i class="fa-solid fa-heart"></i>
                 </div>
@@ -61,6 +63,8 @@ createCards(result)
  
 // console.log(result)
 }
+
+
 cardContainer.onclick=(e)=>{
   console.log(e)
   if(e.target.className==="fa-solid fa-heart"){
@@ -68,10 +72,53 @@ cardContainer.onclick=(e)=>{
       
       if(e.target.style.color==="red"){
         e.target.style.color=""
+        // removeFromSavedList(e);
       }else{
         e.target.style.color="red"
+        addToLocalStorage(e);
       }
   }
 
   // create array heart-> that particular card ->
+}
+
+// collapsable side bar//
+const opensidebarbtn = document.getElementById("sidebar");
+opensidebarbtn.onclick=(e)=>{
+  document.getElementById("mySidebar").style.width = "250px";
+  // document.getElementById("mySidebar").style.height = "1000px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+const closesidebarbtn = document.querySelector(".closebtn");
+closesidebarbtn.onclick=(e)=>{
+  document.getElementById("mySidebar").style.width = "0";
+  // document.getElementById("mySidebar").style.height = "0";
+  document.getElementById("main").style.marginLeft="0";
+}
+
+// saved items
+/* // saved items
+1. heart button click - add that card to empty array
+2. then run a function that adds that array to local storage
+3. on click of saved items button - run a function that fetches local storage data and pass that data to create cards.
+*/
+
+function addToLocalStorage (e){
+  array.author=e.target.parentElement.firstElementChild.firstElementChild.innerHTML ;
+  array.category=e.target.parentElement.firstElementChild.lastElementChild.innerHTML;
+  array.content=e.target.previousElementSibling.firstElementChild.innerText;
+  array.url=e.target.previousElementSibling.lastElementChild.href;
+  // console.log(array)
+  savedarray.push(array);
+
+  console.log(savedarray)
+savedarray.forEach((item)=>{
+  localStorage.setItem("savedNews",JSON.stringify(item))
+})
+ }
+function showFavourites() {
+ let favourite = JSON.parse(localStorage.getItem("savedNews"))
+//  console.log(favourite)
+ createCards(favourite)
 }

@@ -8,31 +8,32 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="bgimg"></div>
+
+    <div id="main">
      <!-- dashbaord page -->
         <div class="dashboard">
             <!-- title -->
-            <div class="title-logo">
-                <div class="logo">
-                    <img src="./mike-in-hand.webp" alt="">
-                </div>
+                
                 <div class="title">
                     <h1>The voice.</h1>
                 </div>
-               
+                <!-- <div class="logo">
+                    <img src="./mike-in-hand.webp" alt="">
+                </div> -->
             </div>
             <!-- saved & recent buttons -->
            
             <div class="button-types">
                 <div class="toggle">
-                    <button>☰ More</button>
-                    </div>  
-                    <div class="newsbtn">
-                 <button class="news-btn">saved news</button>
+                    <button id="sidebar">☰ More</button>
+                </div>  
+                 <div class="newsbtn">
+                 <button  class="news-btn" onclick="showFavourites()" >saved news</button>
                 <button class="news-btn">recent news</button>
-                    </div>
-                
+             </div>
             </div>
-    </div>
+    
    
     <div class="category-bar">
         <button class="category All">All</button>
@@ -58,7 +59,34 @@
             </div>
         </div>
         <i class="fa-regular fa-heart"></i> -->
-     </div>
+      </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <div class="logo">
+                    <img src="./mike-in-hand.webp" alt="">
+                 </div> 
+        <a  class="closebtn" onclick="closeNav()">×</a>
+        <div class="sidebar-menu">
+            <a href="https://everipedia.org/wiki/lang_en/Inshorts">About</a>
+            <a href="#">login/signup</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+      </div>
+      <div id="login">
+        <form action="">
+            <div class="emailinput">
+            <label for="email">Email:</label>
+            <input type="email" name="email"></input>
+            </div>
+            <div class="password">
+             <label for="password">Password:</label>
+            <input type="password" name="password" minlength="8" required></input>
+            </div>
+        </form>
+      </div>
+
     <script src="./scriptnf.js"></script>
 </body>
 </html>
